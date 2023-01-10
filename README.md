@@ -1,1 +1,0 @@
-# bn-fe-group-study
