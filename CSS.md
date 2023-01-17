@@ -1,3 +1,4 @@
+# CSS
 1. What are the main differences between external, internal, and inline CSS?
 2. What is the syntax for class and ID selectors?
 3. How would you apply a single rule to two different selectors?
