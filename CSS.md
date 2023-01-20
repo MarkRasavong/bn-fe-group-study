@@ -1,7 +1,8 @@
 # CSS
 1. What are the main differences between external, internal, and inline CSS?
-* ## external: within the ``head`` tag of the HTML document. You can 'import' your CSS file by using the ``<link rel="stylesheet" href="abs or rel .css file link"/>``
-* ## internal: 
+* external: within the ``head`` tag of the HTML document. You can 'import' your CSS file by using the ``<link rel="stylesheet" href="abs or rel .css file link"/>``
+* internal: within the ``head`` include a style tag ``<style> </style>`` and you can input CSS rules in the same HTML document.
+* inline: within the ``body`` tag, target a specfic HTML element and add the attribute ``style=""`` from there you can manipulate a style of that specific element.
 2. What is the syntax for class and ID selectors?
 3. How would you apply a single rule to two different selectors?
 4. Given an element that has an id of title and a class of primary, how would you use both
