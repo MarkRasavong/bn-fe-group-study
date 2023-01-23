@@ -12,9 +12,13 @@
            }`` 
 4. Given an element that has an id of title and a class of primary, how would you use both
 attributes for a single rule?
+* ``<p id="idName" class="className">{some content}</p>``
+* ``#idName { font-size: 2rem }``
 5. What does the descendant combinator do?
+* ``.ancestor .child`` => if there is a relation between the two in a sense that it is nested, than the child will have the style manipulate
 6. Between a rule that uses one class selector and a rule that uses three type selectors,
 which rule has the higher specificity?
+* ````
 7. From inside to outside, what is the order of box-model properties?
 8. What does the box-sizing CSS property do?
 9. What is the difference between the standard and alternative box model?
