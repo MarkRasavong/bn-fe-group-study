@@ -45,11 +45,35 @@ element and its border?
 16. Is button block or inline?
 * The button element in HTML is a block-level element by default.
 17. Is div block or inline?
-* 
+* The div element in HTML is a block-level element by default.
 18. Is span block or inline?
+* The span element in HTML is an inline element by default. This means that it takes up only as much width as necessary to display its content, and other elements will appear to the side of it.
+
 19. What’s the difference between a flex container and a flex item?
+* The main difference between a flex container and a flex item is that the flex container is the parent element that controls the layout of the flex items and the flex items are the child elements that are laid out according to the properties set on the flex container. Flex container has properties like justify-content, align-items, flex-wrap, and flex-direction that help to control the layout of the flex items. Flex items have properties like flex-grow, flex-shrink, flex-basis, align-self that help to control the individual layout of the item inside the container.
 
 20. How do you create a flex item?
+* ```.flex-container {
+  display: flex; /* Creates a flex container */
+}```
+* ```<div class="flex-container">
+  <div class="flex-item">Item 1</div>
+  <div class="flex-item">Item 2</div>
+  <div class="flex-item">Item 3</div>
+</div>```
+* ```
+.flex-item {
+  display: flex; /* Creates a flex item */
+}
+```
+* ```
+.flex-item {
+  flex-basis: 200px; /* set the base size of flex item*/
+  flex-grow: 1; /* allow the flex item to grow */
+  flex-shrink: 1; /* allow the flex item to shrink */
+  align-self: center; /* align the flex item vertically */
+}
+```
 21. What are the 3 values defined in the shorthand flex property?
 * grow, shrink, & basis
 22. How do you make flex items arrange themselves vertically instead of horizontally?
@@ -57,11 +81,15 @@ element and its border?
 23. What is the difference between justify-content and align-items?
 * ``justify-content`` is the main axis of the ``flex-direction`` and ``align-items``the opposite direction
 24. How do you use flexbox to completely center a div inside a flex container?
-* ``.parent-container { 
+* ```.parent-container { 
 display: flex;
 align-items: center;
 justify-content: center;
 }
-``
+```
 25. What’s the difference between justify-content: space-between and justify-content:
 space-around?
+* The justify-content property in CSS is used to align flex items along the horizontal (main) axis of a flex container. It has several possible values, including space-between and space-around. The main difference between these two values is how they distribute the remaining space within a flex container.
+* justify-content: space-between: It distributes the remaining space evenly between the first and last flex items in the container. The first item will be aligned to the start of the container, and the last item will be aligned to the end of the container. All the other items will be distributed evenly between them, with equal amounts of space between each item.
+* justify-content: space-around: This value will distribute the remaining space evenly around all the flex items, with half the space on the left and right of the first item, and half on the left and right of the last item. This means that there will be more space around the items than between them.
+* Therefore, justify-content: space-between is useful when you want to distribute the space evenly between the items while justify-content: space-around is useful when you want to distribute the space around all the items.
