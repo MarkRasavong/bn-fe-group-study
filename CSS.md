@@ -58,8 +58,10 @@ element and its border?
 * ``justify-content`` is the main axis of the ``flex-direction`` and ``align-items``the opposite direction
 24. How do you use flexbox to completely center a div inside a flex container?
 * ``.parent-container { 
-\n display: flex;
-\n align-items: center;
-\n justify-content: center;``
+<br> display: flex;
+<br> align-items: center;
+<br> justify-content: center;
+<br> ensp }
+``
 25. What’s the difference between justify-content: space-between and justify-content:
 space-around?
