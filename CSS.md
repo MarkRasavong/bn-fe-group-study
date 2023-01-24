@@ -18,25 +18,48 @@ attributes for a single rule?
 * ``.ancestor .child`` => if there is a relation between the two in a sense that it is nested, than the child will have the style manipulate
 6. Between a rule that uses one class selector and a rule that uses three type selectors,
 which rule has the higher specificity?
-* ````
+* the class selector => using the specificity calculator it comes to this ``class = 0,1,0`` v. ``3 type selectors = 0,0,3``
 7. From inside to outside, what is the order of box-model properties?
+* In this order from in to our: ``content, padding, border, && margin``
 8. What does the box-sizing CSS property do?
+* ``box-sizing`` is a css property that sets how the width and height is calculated
+* ``border-box`` takes account of the border and padding for it's height and width but will shrink the content area.
+* ``content-box`` establish the content area width and height and then adds the padding border of an element
 9. What is the difference between the standard and alternative box model?
+* ``standard`` => ``content-box``
+* ``alternative`` => ``border-box``
 10. Would you use margin or padding to create more space between 2 elements?
+* You would use margin to create space between 2 elements.
 11. Would you use margin or padding to create more space between the contents of an
 element and its border?
+* You would use padding to create more space between the element's content and its border
 12. Would you use margin or padding if you wanted two elements to overlap each other?
+* If you want two element to overlap eache other you will need to use margin => most likely in negative values
 13. What is the difference between a block element and an inline element?
+* ```block`` = takes up the entire width of a document
+* ``inline`` = only occupies enough width to display the content
 14. What is the difference between an inline element and an inline-block element?
+* Compared to display: inline, the major difference is that inline-block allows to set a width and height on the element. Also, with display: inline, top and bottom margins & paddings are not respected, and with display: inline-block they are.
 15. Is an h1 block or inline?
+* Yes, the h1 element is a block-level element in HTML.
 16. Is button block or inline?
+* The button element in HTML is a block-level element by default.
 17. Is div block or inline?
+* 
 18. Is span block or inline?
 19. What’s the difference between a flex container and a flex item?
+
 20. How do you create a flex item?
 21. What are the 3 values defined in the shorthand flex property?
+* grow, shrink, & basis
 22. How do you make flex items arrange themselves vertically instead of horizontally?
+* ``flex-direction``: ``column`` || ``column-reverse``
 23. What is the difference between justify-content and align-items?
+* ``justify-content`` is the main axis of the ``flex-direction`` and ``align-items``the opposite direction
 24. How do you use flexbox to completely center a div inside a flex container?
+* ``.parent-container { 
+* \n display: flex;
+* \n align-items: center;
+* \n justify-content: center;``
 25. What’s the difference between justify-content: space-between and justify-content:
 space-around?
