@@ -53,24 +53,24 @@ element and its border?
 * The main difference between a flex container and a flex item is that the flex container is the parent element that controls the layout of the flex items and the flex items are the child elements that are laid out according to the properties set on the flex container. Flex container has properties like justify-content, align-items, flex-wrap, and flex-direction that help to control the layout of the flex items. Flex items have properties like flex-grow, flex-shrink, flex-basis, align-self that help to control the individual layout of the item inside the container.
 
 20. How do you create a flex item?
-* ```
+```
 .flex-container {
   display: flex; /* Creates a flex container */
 }
 ```
-* ```
+```
 <div class="flex-container">
   <div class="flex-item">Item 1</div>
   <div class="flex-item">Item 2</div>
   <div class="flex-item">Item 3</div>
 </div>
 ```
-* ```
+```
 .flex-item {
   display: flex; /* Creates a flex item */
 }
 ```
-* ```
+```
 .flex-item {
   flex-basis: 200px; /* set the base size of flex item*/
   flex-grow: 1; /* allow the flex item to grow */
@@ -85,11 +85,12 @@ element and its border?
 23. What is the difference between justify-content and align-items?
 * ``justify-content`` is the main axis of the ``flex-direction`` and ``align-items``the opposite direction
 24. How do you use flexbox to completely center a div inside a flex container?
-* ```.parent-container { 
-display: flex;
-align-items: center;
-justify-content: center;
-}
+```
+.parent-container { 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
 ```
 25. What’s the difference between justify-content: space-between and justify-content:
 space-around?
